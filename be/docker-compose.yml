@@ -1,0 +1,9 @@
+services:
+  psql:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DATABASE: novellia
+    ports:
+      - "5432:5432"
